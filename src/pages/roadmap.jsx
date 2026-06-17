@@ -9,13 +9,13 @@ export default function Roadmap() {
   return (
     <section
       id="roadmap"
-      className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat pt-[160px] pb-12 px-4 md:px-10 flex flex-col justify-between overflow-x-hidden select-none"
+      className="relative w-full max-w-[100vw] bg-cover bg-center bg-no-repeat pt-[160px] pb-0 px-4 md:px-10 flex flex-col justify-between overflow-hidden select-none lg:aspect-[1456/816] min-h-[700px] lg:min-h-0"
       style={{ backgroundImage: `url(${roadmapBg})` }}
     >
       <div className="absolute inset-0 bg-black/10 pointer-events-none" />
 
       {/* Main Structural Layout Arena */}
-      <div className="w-full max-w-[1840px] mx-auto z-10 flex-1 relative min-h-[750px] lg:min-h-[900px]">
+      <div className="w-full max-w-[1840px] mx-auto z-10 flex-1 relative h-full">
 
         {/* =========================================================
             DESKTOP VIEW CONTAINER (Hidden on Mobile/Tablet)
@@ -32,7 +32,7 @@ export default function Roadmap() {
               top: '13%',
               width: '14px',
               height: '70%',
-              background: 'linear-gradient(to right, #c8b97a, #e8d9a0, #c8b97a)',
+              background: 'linear-gradient(to right, #FFFFFF, #FFFFFF, #FFFFFF)',
               borderRadius: '4px',
               boxShadow: '3px 0 8px rgba(0,0,0,0.4), inset -3px 0 6px rgba(0,0,0,0.2)',
             }}
@@ -186,135 +186,152 @@ export default function Roadmap() {
           </div>
 
           {/* CARD 3: Growth — top-right */}
-<div
-  className="absolute z-20 bg-white border border-black/10 rounded-[20px] p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.15)] text-black"
-  style={{ top: '1%', left: '61%', width: '530px' }}
->
-  {/* Pay/Receive + Timer row */}
-  <div className="grid gap-6 mb-4" style={{ gridTemplateColumns: '1.2fr 1fr' }}>
-    
-    {/* ================= LEFT: ROTATED BOX LAYER ================= */}
-    <div className="bg-[#d99393] rounded-[18px] p-1.5 m-4.5 border border-black/20 flex flex-col gap-2 -rotate-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,0.1)]">
-      <div className="grid grid-cols-2 gap-4 ">
-        {/* You Pay Box */}
-        <div className="flex flex-col gap-0">
-          <span className="text-[9px] font-black text-white/90 tracking-wide ">YOU PAY:</span>
-          <div className="bg-transparent border border-black/40 rounded-lg p-0.5 text-xs font-black text-black text-left h-8 flex items-center">
-            100
-          </div>
-        </div>
-        {/* You Receive Box */}
-        <div className="flex flex-col gap-0">
-          <span className="text-[9px] font-black text-white/90 tracking-wide">YOU RECEIVE:</span>
-          <div className="bg-transparent border border-black/40 rounded-lg p-0.5 text-xs font-black text-black flex justify-between items-center h-8">
-            <span>100,000</span>
-            <span className="text-[9px] opacity-60">$GMF</span>
-          </div>
-        </div>
-      </div>
-      
-      {/* Connect Wallet Button */}
-      <button className="w-full bg-[#125875] text-white text-xs font-black py-2 rounded-xl border border-black shadow-[3px_3px_0px_0px_#000] tracking-wider transition-transform active:translate-y-0.5">
-        Connect Wallet
-      </button>
-    </div>
+          <div
+            className="absolute z-20 bg-white border border-black/10 rounded-[20px] p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.15)] text-black"
+            style={{ top: '1%', left: '61%', width: 'min(530px, 36vw)' }}
+          >
+            {/* Pay/Receive + Timer row */}
+            <div className="grid gap-6 mb-4" style={{ gridTemplateColumns: '1.2fr 1fr' }}>
 
-    {/* ================= RIGHT: COUNTDOWN & NET PANEL ================= */}
-    <div className="bg-transparent flex flex-col items-center justify-between py-1">
-      {/* Dynamic Digit Blocks */}
-      <div className="flex flex-col items-center w-full">
-        <div className="flex gap-1.5 items-center justify-center w-full mt-4 ">
-          {['05', '12', '35', '17'].map((v, i) => (
-            <React.Fragment key={i}>
-              <div className="flex flex-col items-center gap-1">
-                {/* Changed background color to match the image precisely */}
-                <span className="text-xl font-black bg-[#7a6464] text-white px-2.5 py-2 rounded-xl border border-black shadow-[2px_2px_0px_0px_#000] min-w-[38px] text-center">
-                  {v}
-                </span>
-                <span className="text-[8px] font-black text-black tracking-tighter uppercase opacity-80">
-                  {i === 0 ? 'DAYS' : i === 1 ? 'HOURS' : i === 2 ? 'MINUTES' : 'SECONDS'}
-                </span>
+              {/* ================= LEFT: ROTATED BOX LAYER ================= */}
+              <div className="bg-[#d99393] rounded-[18px] p-1.5 m-4.5 border border-black/20 flex flex-col gap-2 -rotate-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,0.1)]">
+                <div className="grid grid-cols-2 gap-4 ">
+                  {/* You Pay Box */}
+                  <div className="flex flex-col gap-0">
+                    <span className="text-[9px] font-black text-white/90 tracking-wide ">YOU PAY:</span>
+                    <div className="bg-transparent border border-black/40 rounded-lg p-0.5 text-xs font-black text-black text-left h-8 flex items-center">
+                      100
+                    </div>
+                  </div>
+                  {/* You Receive Box */}
+                  <div className="flex flex-col gap-0">
+                    <span className="text-[9px] font-black text-white/90 tracking-wide">YOU RECEIVE:</span>
+                    <div className="bg-transparent border border-black/40 rounded-lg p-0.5 text-xs font-black text-black flex justify-between items-center h-8">
+                      <span>100,000</span>
+                      <span className="text-[9px] opacity-60">$GMF</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Connect Wallet Button */}
+                <button className="w-full bg-[#125875] text-white text-xs font-black py-2 rounded-xl border border-black shadow-[3px_3px_0px_0px_#000] tracking-wider transition-transform active:translate-y-0.5">
+                  Connect Wallet
+                </button>
               </div>
-              {i < 3 && <span className="text-sm font-black text-black -mt-4">:</span>}
-            </React.Fragment>
-          ))}
-        </div>
-      </div>
 
-      {/* NET Action Button */}
-      <button className="w-full bg-[#1a333e] text-white text-xs font-black py-2.5 rounded-xl border border-black shadow-[3px_3px_0px_0px_#000] tracking-widest mt-2 hover:bg-[#142630] transition-colors">
-        NET
-      </button>
-    </div>
+              {/* ================= RIGHT: COUNTDOWN & NET PANEL ================= */}
+              <div className="bg-transparent flex flex-col items-center justify-between py-1">
+                {/* Dynamic Digit Blocks */}
+                <div className="flex flex-col items-center w-full">
+                  <div className="flex gap-1.5 items-center justify-center w-full mt-4 ">
+                    {['05', '12', '35', '17'].map((v, i) => (
+                      <React.Fragment key={i}>
+                        <div className="flex flex-col items-center gap-1">
+                          {/* Changed background color to match the image precisely */}
+                          <span className="text-xl font-black bg-[#7a6464] text-white px-2.5 py-2 rounded-xl border border-black shadow-[2px_2px_0px_0px_#000] min-w-[38px] text-center">
+                            {v}
+                          </span>
+                          <span className="text-[8px] font-black text-black tracking-tighter uppercase opacity-80">
+                            {i === 0 ? 'DAYS' : i === 1 ? 'HOURS' : i === 2 ? 'MINUTES' : 'SECONDS'}
+                          </span>
+                        </div>
+                        {i < 3 && <span className="text-sm font-black text-black -mt-4">:</span>}
+                      </React.Fragment>
+                    ))}
+                  </div>
+                </div>
 
-  </div>
+                {/* NET Action Button */}
+                <button className="w-full bg-[#1a333e] text-white text-xs font-black py-2.5 rounded-xl border border-black shadow-[3px_3px_0px_0px_#000] tracking-widest mt-2 hover:bg-[#142630] transition-colors">
+                  NET
+                </button>
+              </div>
 
-  {/* Lower Typography Card Base Section */}
-  <div className="flex items-start justify-between gap-4 mt-2">
-    <div className="flex-1 text-left ">
-      <h3 className="font-black text-xl leading-tight tracking-wide">Growth</h3>
-      <p className="text-xs font-bold text-black/70 mt-1.5 leading-relaxed">
-        Staking platform release, community rewards programs, NET integration.
-      </p>
-    </div>
-    {/* Rocket Icon */}
-    <div className="shrink-0 pt-1">
-      <img src={presale1} alt="Rocket" className="h-10 w-auto object-contain animate-pulse" />
-    </div>
-  </div>
-</div>
+            </div>
+
+            {/* Lower Typography Card Base Section */}
+            <div className="flex items-start justify-between gap-4 mt-2">
+              <div className="flex-1 text-left ">
+                <h3 className="font-black text-xl leading-tight tracking-wide">Growth</h3>
+                <p className="text-xs font-bold text-black/70 mt-1.5 leading-relaxed">
+                  Staking platform release, community rewards programs, NET integration.
+                </p>
+              </div>
+              {/* Rocket Icon */}
+              <div className="shrink-0 pt-1">
+                <img src={presale1} alt="Rocket" className="h-10 w-auto object-contain animate-pulse" />
+              </div>
+            </div>
+          </div>
 
           {/* CARD 4: Global Expansion — bottom-right, below Phase 4 */}
-<div
-  className="absolute z-20 bg-white border border-black/10 rounded-[20px] p-5 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.15)] text-black flex flex-col justify-between"
-  style={{ top: '45%', left: '61%', width: '360px', minHeight: '140px' }}
->
-  {/* Top Row: Contains left-aligned text blocks and right-aligned vector logo asset */}
-  <div className="flex justify-between items-start w-full gap-4">
-    {/* Text block container */}
-    <div className="flex flex-col text-left">
-      <h3 className="font-black text-xl mt-7 leading-tight tracking-wide text-black">
-        Global Expansion
-      </h3>
-      <p className="text-xs font-bold text-black/80 mt-2 leading-relaxed max-w-[210px]">
-        Partnerships, governance integration, ecosystem enhancements.
-      </p>
-    </div>
+          <div
+            className="absolute z-20 bg-white border border-black/10 rounded-[20px] p-5 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.15)] text-black flex flex-col justify-between"
+            style={{ top: '54%', left: '54%', width: '360px', minHeight: '140px' }}
+          >
+            {/* Top Row: Contains left-aligned text blocks and right-aligned vector logo asset */}
+            <div className="flex justify-between items-start w-full gap-4">
+              {/* Text block container */}
+              <div className="flex flex-col text-left">
+                <h3 className="font-black text-xl mt-7 leading-tight tracking-wide text-black">
+                  Global Expansion
+                </h3>
+                <p className="text-xs font-bold text-black/80 mt-2 leading-relaxed max-w-[210px]">
+                  Partnerships, governance integration, ecosystem enhancements.
+                </p>
+              </div>
 
-    {/* Brand vector logo positioned on the right side */}
-    <div className="shrink-0 -mt-1">
-      <img 
-        src={logo} 
-        alt="Memo Logo" 
-        className="h-14 w-auto object-contain" 
-      />
-    </div>
-  </div>
+              {/* Brand vector logo positioned on the right side */}
+              <div className="shrink-0 -mt-1">
+                <img
+                  src={logo}
+                  alt="Memo Logo"
+                  className="h-14 w-auto object-contain"
+                />
+              </div>
+            </div>
 
-  {/* Bottom Row: Centers the little rocket icon cleanly at the bottom container floor */}
-  <div className="w-full flex justify-center items-center pt-3">
-    <img 
-      src={presale1} 
-      alt="Rocket" 
-      className="h-7 w-auto object-contain animate-pulse" 
-    />
-  </div>
-</div>
+            {/* Bottom Row: Centers the little rocket icon cleanly at the bottom container floor */}
+            <div className="w-full flex justify-center items-center pt-3">
+              <img
+                src={presale1}
+                alt="Rocket"
+                className="h-7 w-auto object-contain animate-pulse"
+              />
+            </div>
+          </div>
 
           {/* ===== ELON IMAGE — bottom-right corner ===== */}
           <div
             className="absolute pointer-events-none z-10"
-            style={{ width: '420px', height: '500px', bottom: '-80px', right: '-30px' }}
+            style={{ width: 'min(600px, 40vw)', height: 'min(600px, 55vh)', top: '45%', right: '-15%' }}
           >
             <img src={elon} alt="Elon Musk Illustration" className="w-full h-full object-contain object-bottom" />
           </div>
 
-          {/* Speech bubble near Elon */}
-          <div
-            className="absolute z-30 bg-white border-2 border-black/70 rounded-full px-4 py-1.5 text-[11px] font-black text-black flex items-center gap-1"
-            style={{ bottom: '30%', right: '18%' }}
-          >
-            ← PHASE 1
+          {/* =========================================================
+    THOUGHT/SPEECH BUBBLE GROUP (MATCHES IMAGE_A67A3E.PNG EXACTLY)
+    ========================================================= */}
+          <div className="absolute z-30 flex flex-col items-center" style={{ bottom: '43%', right: '10%' }}>
+
+            {/* Main Thought Bubble Oval */}
+            <div
+              className="bg-white border-2 border-black rounded-full px-6 py-2.5 text-xs font-black text-black flex items-center justify-center gap-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+              style={{ minWidth: '130px' }}
+            >
+              {/* Styled custom arrow text alignment */}
+              <span className="text-base font-black leading-none -mt-0.5 select-none">↖</span>
+              <span className="tracking-wide uppercase">PHASE 1</span>
+            </div>
+
+            {/* Thinking Bubble Trails: Two trailing circular nodes offset to match the image */}
+            <div className="w-full relative flex flex-col items-end pr-8 mt-1 gap-1">
+              {/* Medium Node */}
+              <div className="w-4 h-3 bg-white border-2 border-black rounded-full shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]" />
+              {/* Smallest Node */}
+              <div className="w-2.5 h-2 bg-white border-2 border-black rounded-full shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] mr-[-6px]" />
+            </div>
+
           </div>
 
         </div>
@@ -402,7 +419,7 @@ export default function Roadmap() {
       </div>
 
       {/* Footer copyright anchor */}
-      <div className="w-full text-center text-[10px] text-white/40 font-medium z-10 mt-12">
+      <div className="w-full text-center text-[10px] text-white/40 font-medium z-10 mt-4 lg:absolute lg:bottom-2 lg:left-0">
         @copyright 2026 all right reserved by Memo
       </div>
     </section>

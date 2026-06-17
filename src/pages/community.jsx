@@ -1,5 +1,5 @@
 import React from 'react';
-import communityBg from '../assets/communitybg.png'; // Going up one level to reach assets directory
+import communityBg from '../assets/communitybg.png'; 
 
 export default function Community() {
   return (
@@ -56,7 +56,7 @@ export default function Community() {
         style={{ backgroundImage: `url(${communityBg})` }}
       >
         
-        {/* ================= LOWER LAYER MINI FOOTER NAVIGATION ================= */}
+        {/* LOWER LAYER MINI FOOTER NAVIGATION  */}
         <div className="w-full max-w-[1840px] mx-auto px-6 md:px-10 z-10 flex flex-col md:flex-row items-center justify-between gap-4 pt-10 pb-2 border-t border-white/10 mt-auto bg-gradient-to-t from-black via-black/90 to-transparent">
           
           {/* Bottom Left Navigation Secondary Text Links */}

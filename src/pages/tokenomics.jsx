@@ -133,14 +133,6 @@ export default function Tokenomics() {
         </div>
       </div>
 
-
-      {/* =========================================================================
-          FIXED MOBILE VIEWPORT CONTROLLER (lg:hidden - MATCHES IMAGE_95343E.PNG)
-          ========================================================================= */}
-      {/* CRITICAL MOBILE FIX: 
-          - Changed from absolute layout to a fixed-height layout block arena (`h-[580px] -mt-10 mx-auto`) 
-          - This locks the lines and dots in place and safely spaces them away from the top text header!
-      */}
       <div className="lg:hidden relative w-full max-w-[375px] h-[580px] -mt-10 mx-auto z-20 pointer-events-none">
         
         {/* SVG Pointer Lines for Mobile View */}

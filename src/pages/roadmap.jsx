@@ -20,7 +20,7 @@ export default function Roadmap() {
         {/* DESKTOP VIEW CONTAINER (100% UNTOUCHED & UNCHANGED) */}
         <div className="hidden lg:block absolute inset-0 w-full h-full">
 
-          {/* ===== SIGNPOST POLE ===== */}
+          {/* SIGNPOST POLE */}
           <div
             className="absolute z-10"
             style={{
@@ -34,7 +34,7 @@ export default function Roadmap() {
             }}
           />
 
-          {/* ===== PHASE ARROW SIGNS ===== */}
+          {/* PHASE ARROW SIGNS*/}
           <div
             className="absolute z-20"
             style={{
@@ -257,7 +257,7 @@ export default function Roadmap() {
             </div>
           </div>
 
-          {/* ===== ELON IMAGE & THOUGHT BUBBLE ===== */}
+          {/* ELON IMAGE & THOUGHT BUBBLE */}
           <div
             className="absolute pointer-events-none z-10"
             style={{ width: 'min(600px, 40vw)', height: 'min(600px, 55vh)', top: '45%', right: '-15%' }}

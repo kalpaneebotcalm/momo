@@ -10,30 +10,24 @@ export default function Home() {
       className="relative w-full min-h-screen bg-black pt-[150px] pb-12 px-4 md:px-10 overflow-hidden flex flex-col justify-between"
     >
       
-      {/* =========================================================================
-          BACKGROUND IMAGE — MOBILE: zoomed in to focus on the man
-         ========================================================================= */}
+      {/*  BACKGROUND IMAGE — MOBILE: zoomed in to focus on the man */}
       <div 
         className="absolute top-[105px] left-0 w-full h-[calc(100%-110px)] pointer-events-none z-0 lg:hidden"
         style={{
           backgroundImage: `url(${bgImage})`,
-          backgroundSize: '440%',          /* zoom level — increase to zoom more */
-          backgroundPosition: 'center 5%', /* vertical focus — lower % = higher on image */
+          backgroundSize: '440%',         
+          backgroundPosition: 'center 5%', 
           backgroundRepeat: 'no-repeat',
         }}
       />
 
-      {/* =========================================================================
-          BACKGROUND IMAGE — DESKTOP: original contain / no stretch
-         ========================================================================= */}
+      {/* BACKGROUND IMAGE — DESKTOP: original contain / no stretch*/}
       <div 
         className="absolute top-[105px] left-0 w-full h-[calc(100%-110px)] bg-contain bg-center bg-no-repeat pointer-events-none z-0 hidden lg:block"
         style={{ backgroundImage: `url(${bgImage})` }}
       />
 
-      {/* =========================================================================
-          MOBILE LAYOUT (visible only on mobile, hidden on lg+)
-         ========================================================================= */}
+      {/* MOBILE LAYOUT (visible only on mobile, hidden on lg+) */}
       <div className="flex flex-col items-center w-full z-10 relative lg:hidden gap-0">
 
         {/* Logo */}
@@ -74,12 +68,10 @@ export default function Home() {
 
       </div>
 
-      {/* =========================================================================
-          DESKTOP LAYOUT (hidden on mobile, visible on lg+)
-         ========================================================================= */}
+      {/* DESKTOP LAYOUT (hidden on mobile, visible on lg+) */}
       <div className="hidden lg:grid w-full max-w-[1840px] mx-auto grid-cols-12 gap-8 items-start mt-12 z-10 relative">
         
-        {/* ================= LEFT COLUMN: LOGO AND REUSABLE CARD ================= */}
+        {/*LEFT COLUMN: LOGO AND REUSABLE CARD */}
         <div className="lg:col-span-4 w-full flex flex-col items-start gap-4">
           
           {/* Brand Vector Logo Overlay */}
@@ -104,11 +96,11 @@ export default function Home() {
 
         </div>
 
-        {/* ================= CENTER COLUMN: SPACER FOR BACKGROUND ART ================= */}
+        {/*  CENTER COLUMN: SPACER FOR BACKGROUND ART  */}
         <div className="lg:col-span-4 w-full flex flex-col items-center justify-center pt-12">
         </div>
 
-        {/* ================= RIGHT COLUMN: HEADINGS & INFO CARD ================= */}
+        {/*  RIGHT COLUMN: HEADINGS & INFO CARD */}
         <div className="lg:col-span-4 w-full flex flex-col items-end justify-center gap-6 text-right">
           
           <h1 className="text-white font-black text-5xl lg:text-6xl leading-[1.1] tracking-wide max-w-[500px] drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">

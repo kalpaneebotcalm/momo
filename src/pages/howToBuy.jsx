@@ -1,7 +1,7 @@
 import React from 'react';
-import PresaleCard from '../components/PresaleCard'; // Imported your reusable component
+import PresaleCard from '../components/PresaleCard'; 
 
-// Import sequential imagery matching your renamed assets file naming format
+
 import img1 from '../assets/1.png';
 import img2 from '../assets/2.png';
 import img3 from '../assets/3.png';
@@ -23,7 +23,7 @@ export default function HowToBuy() {
       {/* Core Split Master Grid Layout Wrapper Container */}
       <div className="w-full max-w-[1840px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start z-10 flex-1">
         
-        {/* ================= LEFT SIDE BLOCK: HEADER AND 2x2 STEP CARDS ================= */}
+        {/*  LEFT SIDE BLOCK: HEADER AND 2x2 STEP CARDS  */}
         <div className="w-full lg:col-span-8 flex flex-col gap-8">
           
           {/* Main Big Heading */}
@@ -62,19 +62,14 @@ export default function HowToBuy() {
 
         </div>
 
-        {/* ================= RIGHT SIDE BLOCK: CORE TOKEN PRESALE SWAP CARD ================= */}
+        {/*  RIGHT SIDE BLOCK: CORE TOKEN PRESALE SWAP CARD */}
         <div className="w-full lg:col-span-4 flex justify-center lg:justify-end mt-8 lg:mt-0">
           
-          {/* =========================================================================
-              EXCLUSIVELY POSITION THE PRESALE CARD HERE
-              - Change the 'top' pixel value to push the card down or pull it up.
-              - Change the 'left' pixel value to tweak horizontal alignment independently.
-             ========================================================================= */}
           <div 
             className="relative w-full flex justify-center lg:justify-end z-10"
             style={{
-              top: '40px',   // Increase this value to push the card down, or use negative numbers to pull it up
-              left: '0px'    // Tweak horizontal alignment
+              top: '40px',   
+              left: '0px'    
             }}
           >
             <PresaleCard />

@@ -1,5 +1,16 @@
 import React from 'react';
 import tokenBg from '../assets/tokenbg.png'; 
+import line1 from '../assets/Line 1.png';
+import line2 from '../assets/Line 2.png';
+import line3 from '../assets/Line 3.png';
+import line4 from '../assets/Line 4.png'; 
+import line5 from '../assets/Line 5.png';
+import line6 from '../assets/Line 6.png';
+import line7 from '../assets/Line 7.png'; // Imported mobile line assets
+import line8 from '../assets/Line 8.png';
+import line9 from '../assets/Line 9.png';
+import line10 from '../assets/Line 10.png';
+import line11 from '../assets/Line 11.png';
 
 export default function Tokenomics() {
   return (
@@ -42,22 +53,75 @@ export default function Tokenomics() {
           }} 
         />
 
-        {/* 2. SVG VECTOR POINTER LINES */}
-        <svg 
-          className="absolute inset-0 w-full h-full pointer-events-none z-10"
-          viewBox="0 0 1280 680" 
-          fill="none" 
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M 180 210 L 240 230 L 290 290 L 360 310 L 421 367" stroke="#3b9d6e" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M 110 395 L 240 395 L 360 430" stroke="#40c070" strokeWidth="2.5" />
-          <path d="M 180 580 L 250 540 L 380 490" stroke="#40c070" strokeWidth="2.5" />
-          <path d="M 1100 210 L 1020 270 L 880 340" stroke="#40c070" strokeWidth="2.5" opacity="0.85" />
-          <path d="M 1170 395 L 1070 395 L 940 420" stroke="#40c070" strokeWidth="2.5" opacity="0.85" />
-          <path d="M 1100 580 L 1030 540 L 900 490" stroke="#40c070" strokeWidth="2.5" opacity="0.85" />
-        </svg>
+        {/* 2. IMAGE LINE PLACEMENTS (LEFT SIDE) */}
+        <img 
+          src={line1} 
+          alt="Line 1" 
+          className="absolute z-10 object-contain pointer-events-none"
+          style={{
+            left: '175px',
+            top: '205px',
+            width: '250px',
+          }}
+        />
 
-        {/* 3. CONTENT OVERLAY */}
+        <img 
+          src={line2} 
+          alt="Line 2" 
+          className="absolute z-10 object-contain pointer-events-none"
+          style={{
+            left: '105px',
+            top: '390px',
+            width: '260px',
+          }}
+        />
+
+        <img 
+          src={line3} 
+          alt="Line 3" 
+          className="absolute z-10 object-contain pointer-events-none"
+          style={{
+            left: '175px',
+            top: '485px',
+            width: '210px',
+          }}
+        />
+
+        {/* 3. IMAGE LINE PLACEMENTS (RIGHT SIDE) */}
+        <img 
+          src={line4} 
+          alt="Line 4" 
+          className="absolute z-10 object-contain pointer-events-none"
+          style={{
+            right: '175px',
+            top: '205px',
+            width: '250px',
+          }}
+        />
+
+        <img 
+          src={line5} 
+          alt="Line 5" 
+          className="absolute z-10 object-contain pointer-events-none"
+          style={{
+            right: '105px',
+            top: '390px',
+            width: '260px',
+          }}
+        />
+
+        <img 
+          src={line6} 
+          alt="Line 6" 
+          className="absolute z-10 object-contain pointer-events-none"
+          style={{
+            right: '175px',
+            top: '485px',
+            width: '210px',
+          }}
+        />
+
+        {/* 4. CONTENT OVERLAY */}
         <div className="absolute inset-0 w-full h-full pointer-events-none z-20">
           {/* Left Top Card */}
           <div className="absolute top-[140px] left-[110px] flex flex-col items-start gap-1 pointer-events-auto">
@@ -69,7 +133,6 @@ export default function Tokenomics() {
               public
             </div>
           </div>
-          <div className="absolute top-[203px] left-[173px] w-3.5 h-3.5 rounded-full bg-[#40c070] border-2 border-white shadow-md shadow-black" />
 
           {/* Left Center Card */}
           <div className="absolute top-[325px] left-[40px] flex flex-col items-start gap-1 pointer-events-auto">
@@ -81,10 +144,9 @@ export default function Tokenomics() {
               public
             </div>
           </div>
-          <div className="absolute top-[388px] left-[103px] w-3.5 h-3.5 rounded-full bg-[#40c070] border-2 border-white shadow-md shadow-black" />
 
           {/* Left Bottom Card */}
-          <div className="absolute top-[510px] left-[110px] flex flex-col items-start gap-1 pointer-events-auto">
+          <div className="absolute top-[510px] left-[100px] flex flex-col items-start gap-1 pointer-events-auto">
             <div className="flex items-center gap-1">
               <span className="text-white font-black text-xs">20%</span>
               <div className="w-12 h-2.5 bg-[#40c070] rounded border border-black" />
@@ -93,7 +155,6 @@ export default function Tokenomics() {
               public
             </div>
           </div>
-          <div className="absolute top-[573px] left-[173px] w-3.5 h-3.5 rounded-full bg-[#40c070] border-2 border-white shadow-md shadow-black" />
 
           {/* Right Top Card */}
           <div className="absolute top-[140px] right-[110px] flex flex-col items-end gap-1 pointer-events-auto">
@@ -105,10 +166,9 @@ export default function Tokenomics() {
               public
             </div>
           </div>
-          <div className="absolute top-[203px] right-[173px] w-3.5 h-3.5 rounded-full bg-[#40c070] border-2 border-white shadow-md shadow-black" />
 
           {/* Right Center Card */}
-          <div className="absolute top-[325px] right-[40px] flex flex-col items-end gap-1 pointer-events-auto">
+          <div className="absolute top-[345px] right-[40px] flex flex-col items-end gap-1 pointer-events-auto">
             <div className="flex items-center gap-1 flex-row-reverse">
               <span className="text-white font-black text-xs">20%</span>
               <div className="w-12 h-2.5 bg-[#40c070] rounded border border-black" />
@@ -117,10 +177,9 @@ export default function Tokenomics() {
               public
             </div>
           </div>
-          <div className="absolute top-[388px] right-[103px] w-3.5 h-3.5 rounded-full bg-[#40c070] border-2 border-white shadow-md shadow-black" />
 
           {/* Right Bottom Card */}
-          <div className="absolute top-[510px] right-[110px] flex flex-col items-end gap-1 pointer-events-auto">
+          <div className="absolute top-[500px] right-[100px] flex flex-col items-end gap-1 pointer-events-auto">
             <div className="flex items-center gap-1 flex-row-reverse">
               <span className="text-white font-black text-xs">20%</span>
               <div className="w-12 h-2.5 bg-[#40c070] rounded border border-black" />
@@ -129,30 +188,57 @@ export default function Tokenomics() {
               public
             </div>
           </div>
-          <div className="absolute top-[573px] right-[173px] w-3.5 h-3.5 rounded-full bg-[#40c070] border-2 border-white shadow-md shadow-black" />
         </div>
       </div>
 
+      {/* MASTER BOUND CANVAS CONTAINER (MOBILE VIEW) */}
       <div className="lg:hidden relative w-full max-w-[375px] h-[580px] -mt-10 mx-auto z-20 pointer-events-none">
         
-        {/* SVG Pointer Lines for Mobile View */}
-        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 375 580" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 40 375 L 75 355 L 85 305" stroke="#40c070" strokeWidth="2" strokeLinecap="round" />
-          <path d="M 85 365 L 110 325 L 115 210" stroke="#40c070" strokeWidth="2" strokeLinecap="round" />
-          <path d="M 187 365 L 187 130" stroke="#40c070" strokeWidth="2.5" strokeLinecap="round" />
-          <path d="M 285 365 L 265 325 L 295 275" stroke="#40c070" strokeWidth="2" strokeLinecap="round" />
-          <path d="M 335 375 L 315 355 L 350 325" stroke="#40c070" strokeWidth="2" strokeLinecap="round" />
-        </svg>
+        {/* MOBILE LINE IMAGE PLACEMENTS */}
+        <img 
+          src={line7} 
+          alt="Line 7" 
+          className="absolute z-10 object-contain pointer-events-none"
+          style={{ left: '25px', top: '300px', width: '60px' }}
+        />
+
+        <img 
+          src={line8} 
+          alt="Line 8" 
+          className="absolute z-10 object-contain pointer-events-none"
+          style={{ left: '24%', top: '38%', width: '55px' }}
+        />
+
+        <img 
+          src={line9} 
+          alt="Line 9" 
+          className="absolute z-10 object-contain pointer-events-none"
+          style={{ left: '44%', top: '23%', width: '40px', height: '200px' }}
+        />
+
+        <img 
+          src={line10} 
+          alt="Line 10" 
+          className="absolute z-10 object-contain pointer-events-none"
+          style={{ right: '25%', top: '26%', width: '50px' }}
+        />
+
+        <img 
+          src={line11} 
+          alt="Line 11" 
+          className="absolute z-10 object-contain pointer-events-none"
+          style={{ right: '7%', top: '50%', width: '60px' }}
+        />
 
         {/* Far Left Mid Card Cutoff */}
         <div className="absolute top-[305px] left-[-30px] flex flex-col items-center scale-90 pointer-events-auto">
           <div className="bg-black border border-[#40c070] text-[#40c070] font-black text-[9px] tracking-wider px-2 py-0.5 rounded-md [clip-path:polygon(0%_0%,_88%_0%,_100%_35%,_100%_100%,_0%_100%)]">
-            ic
+            pubic
           </div>
         </div>
 
         {/* Left Card */}
-        <div className="absolute top-[230px] left-[20px] flex flex-col items-start gap-0.5 pointer-events-auto">
+        <div className="absolute top-[200px] left-[20px] flex flex-col items-start gap-0.5 pointer-events-auto">
           <div className="flex items-center gap-1">
             <span className="text-white font-black text-[11px]">20%</span>
             <div className="w-10 h-2 bg-[#40c070] rounded border border-black" />
@@ -161,10 +247,9 @@ export default function Tokenomics() {
             public
           </div>
         </div>
-        <div className="absolute top-[299px] left-[79px] w-2.5 h-2.5 rounded-full bg-[#40c070]" />
 
         {/* Center Card */}
-        <div className="absolute top-[65px] left-1/2 -translate-x-1/2 flex flex-col items-center gap-0.5 pointer-events-auto">
+        <div className="absolute top-[75px] left-1/2 -translate-x-1/2 flex flex-col items-center gap-0.5 pointer-events-auto">
           <div className="flex items-center gap-1">
             <span className="text-white font-black text-[11px]">20%</span>
             <div className="w-10 h-2 bg-[#40c070] rounded border border-black" />
@@ -173,10 +258,9 @@ export default function Tokenomics() {
             public
           </div>
         </div>
-        <div className="absolute top-[124px] left-[182px] w-2.5 h-2.5 rounded-full bg-[#40c070]" />
 
         {/* Right Card */}
-        <div className="absolute top-[175px] right-[20px] flex flex-col items-start gap-0.5 pointer-events-auto">
+        <div className="absolute top-[100px] right-[20px] flex flex-col items-start gap-0.5 pointer-events-auto">
           <div className="flex items-center gap-1">
             <span className="text-white font-black text-[11px]">20%</span>
             <div className="w-10 h-2 bg-[#40c070] rounded border border-black" />
@@ -185,7 +269,6 @@ export default function Tokenomics() {
             public
           </div>
         </div>
-        <div className="absolute top-[269px] right-[75px] w-2.5 h-2.5 rounded-full bg-[#40c070]" />
 
         {/* Far Right Mid Card Cutoff */}
         <div className="absolute top-[235px] right-[-30px] flex flex-col items-center scale-90 pointer-events-auto">

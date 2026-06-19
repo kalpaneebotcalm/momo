@@ -4,6 +4,11 @@ import presale1 from '../assets/presale1.png';
 import coin from '../assets/coin.png';
 import elon from '../assets/elon.png';
 import logo from '../assets/logo.png';
+import vector12 from '../assets/Vector 12.png';
+import phase1 from '../assets/phase 1.png';
+import phase2 from '../assets/phase 2.png';
+import phase3 from '../assets/phase 3.png';
+import phase4 from '../assets/phase 4.png';
 
 export default function Roadmap() {
   return (
@@ -17,132 +22,72 @@ export default function Roadmap() {
       {/* Main Structural Layout Arena */}
       <div className="w-full max-w-[1840px] mx-auto z-10 flex-1 relative h-full">
 
-        {/* DESKTOP VIEW CONTAINER (100% UNTOUCHED & UNCHANGED) */}
+        {/* DESKTOP VIEW CONTAINER */}
         <div className="hidden lg:block absolute inset-0 w-full h-full">
 
-          {/* SIGNPOST POLE */}
-          <div
-            className="absolute z-10"
+          {/* SIGNPOST POLE IMAGE */}
+          <img
+            src={vector12}
+            alt="Signpost Pole"
+            className="absolute z-10 object-fill"
             style={{
               left: 'calc(46% - 7px)',
               top: '13%',
-              width: '14px',
-              height: '70%',
-              background: 'linear-gradient(to right, #FFFFFF, #FFFFFF, #FFFFFF)',
-              borderRadius: '4px',
-              boxShadow: '3px 0 8px rgba(0,0,0,0.4), inset -3px 0 6px rgba(0,0,0,0.2)',
+              width: '28px',
+              height: '636px',
             }}
           />
 
-          {/* PHASE ARROW SIGNS*/}
-          <div
-            className="absolute z-20"
+          {/* PHASE ARROW IMAGES (DESKTOP) */}
+          <img
+            src={phase1}
+            alt="Phase 1"
+            className="absolute z-20 object-contain"
             style={{
-              right: 'calc(54% + 0px)',
+              right: 'calc(50.5% + 0px)',
+              top: '13%',
+              width: '260px',
+
+            }}
+          />
+
+          <img
+            src={phase2}
+            alt="Phase 2"
+            className="absolute z-20 object-contain"
+            style={{
+              left: 'calc(44.5% + 0px)',
               top: '20%',
-              transform: 'rotate(6deg)',
-              filter: 'drop-shadow(3px 3px 4px rgba(0,0,0,0.35))',
+              width: '260px',
             }}
-          >
-            <div style={{
-              background: 'linear-gradient(#FFFFFF, #FFFFFF, #FFFFFF)',
-              border: '2.5px solid #2a1f0a',
-              padding: '10px 18px 10px 34px',
-              fontWeight: 900,
-              fontSize: '20px',
-              letterSpacing: '0.04em',
-              color: '#1a1a1a',
-              clipPath: 'polygon(16% 0%, 100% 0%, 100% 100%, 16% 100%, 0% 50%)',
-              width: '200px',
-              textAlign: 'center',
-              fontFamily: 'serif',
-            }}>
-              ← Phase 1
-            </div>
-          </div>
+          />
 
-          <div
-            className="absolute z-20"
+          <img
+            src={phase3}
+            alt="Phase 3"
+            className="absolute z-20 object-contain"
             style={{
-              left: 'calc(46% + 0px)',
-              top: '27%',
-              transform: 'rotate(-5deg)',
-              filter: 'drop-shadow(3px 3px 4px rgba(0,0,0,0.35))',
+              right: 'calc(50.5% + 5px)',
+              top: '35%',
+              width: '260px',
             }}
-          >
-            <div style={{
-              background: 'linear-gradient(#FFFFFF, #FFFFFF, #FFFFFF)',
-              border: '2.5px solid #2a1f0a',
-              padding: '10px 34px 10px 18px',
-              fontWeight: 900,
-              fontSize: '20px',
-              letterSpacing: '0.04em',
-              color: '#1a1a1a',
-              clipPath: 'polygon(0% 0%, 84% 0%, 100% 50%, 84% 100%, 0% 100%)',
-              width: '200px',
-              textAlign: 'center',
-              fontFamily: 'serif',
-            }}>
-              Phase 2 →
-            </div>
-          </div>
+          />
 
-          <div
-            className="absolute z-20"
+          <img
+            src={phase4}
+            alt="Phase 4"
+            className="absolute z-20 object-contain"
             style={{
-              right: 'calc(54% + 5px)',
-              top: '40%',
-              transform: 'rotate(0deg)',
-              filter: 'drop-shadow(3px 3px 4px rgba(0,0,0,0.35))',
+              left: 'calc(43.5% + 5px)',
+              top: '41%',
+              width: '260px',
             }}
-          >
-            <div style={{
-              background: 'linear-gradient(#FFFFFF, #FFFFFF, #FFFFFF)',
-              border: '2.5px solid #2a1f0a',
-              padding: '10px 18px 10px 34px',
-              fontWeight: 900,
-              fontSize: '20px',
-              letterSpacing: '0.04em',
-              color: '#1a1a1a',
-              clipPath: 'polygon(16% 0%, 100% 0%, 100% 100%, 16% 100%, 0% 50%)',
-              width: '200px',
-              textAlign: 'center',
-              fontFamily: 'serif',
-            }}>
-              ← Phase 3
-            </div>
-          </div>
-
-          <div
-            className="absolute z-20"
-            style={{
-              left: 'calc(46% + 5px)',
-              top: '46%',
-              transform: 'rotate(0deg)',
-              filter: 'drop-shadow(3px 3px 4px rgba(0,0,0,0.35))',
-            }}
-          >
-            <div style={{
-              background: 'linear-gradient(to right, #FFFFFF, #FFFFFF, #FFFFFF)',
-              border: '2.5px solid #2a1f0a',
-              padding: '10px 34px 10px 18px',
-              fontWeight: 900,
-              fontSize: '20px',
-              letterSpacing: '0.04em',
-              color: '#1a1a1a',
-              clipPath: 'polygon(0% 0%, 84% 0%, 100% 50%, 84% 100%, 0% 100%)',
-              width: '200px',
-              textAlign: 'center',
-              fontFamily: 'serif',
-            }}>
-              Phase 4 →
-            </div>
-          </div>
+          />
 
           {/* ===== CARDS ===== */}
           <div
             className="absolute z-20 bg-white border border-black/10 rounded-[20px] p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.15)] text-black"
-            style={{ top: '1%', left: '3%', width: '370px' }}
+            style={{ top: '1%', left: '4%', width: '400px' }}
           >
             <div className="flex gap-1 flex-wrap mb-3">
               {['DEXTools', 'Telegram', 'X.com', 'Etherscan', 'X.com', 'Etherscan', 'DEXTools', 'Telegram'].map((tag, i) => (
@@ -160,7 +105,7 @@ export default function Roadmap() {
 
           <div
             className="absolute z-20 bg-white border border-black/10 rounded-[20px] p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.15)] text-black flex items-center gap-3"
-            style={{ top: '48%', left: '11%', width: '310px' }}
+            style={{ top: '49%', left: '14%', width: '310px' }}
           >
             <div className="w-16 h-16 rounded-full bg-[#e3f4ee] border border-black/10 flex-shrink-0 overflow-hidden flex items-center justify-center">
               <img src={coin} alt="Memo Coin" className="w-full h-full object-cover" />
@@ -237,7 +182,7 @@ export default function Roadmap() {
 
           <div
             className="absolute z-20 bg-white border border-black/10 rounded-[20px] p-5 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.15)] text-black flex flex-col justify-between"
-            style={{ top: '54%', left: '54%', width: '360px', minHeight: '140px' }}
+            style={{ top: '55%', left: '54%', width: '360px', minHeight: '140px' }}
           >
             <div className="flex justify-between items-start w-full gap-4">
               <div className="flex flex-col text-left">
@@ -281,132 +226,85 @@ export default function Roadmap() {
 
         </div>
 
-        {/*  MOBILE VIEW CONTAINER (Updates exclusively targeting mobile view image_8ade5a.png) */}
+        {/* MOBILE VIEW CONTAINER */}
         <div className="lg:hidden absolute inset-0 w-full h-full flex flex-col justify-between">
           
           {/* Signpost Setup Area */}
           <div className="relative w-full flex-1 flex items-center justify-center min-h-[420px] mt-10">
+            
             {/* Pole Base Layer */}
-            <div
-            className="absolute z-10"
-            style={{
-              left: 'calc(46% - 7px)',
-              top: '1%',
-              width: '14px',
-              height: '90%',
-              background: 'linear-gradient(to right, #FFFFFF, #FFFFFF, #FFFFFF)',
-              borderRadius: '4px',
-              boxShadow: '3px 0 8px rgba(0,0,0,0.4), inset -3px 0 6px rgba(0,0,0,0.2)',
-            }}
-          />
+            <img
+              src={vector12}
+              alt="Signpost Pole"
+              className="absolute z-10 object-fill"
+              style={{
+                left: 'calc(46% - 7px)',
+                top: '1%',
+                width: '14px',
+                height: '90%',
+              }}
+            />
 
-          <div
-            className="absolute z-20"
-            style={{
-              right: 'calc(54% + 0px)',
-              top: '20%',
-              transform: 'rotate(6deg)',
-              filter: 'drop-shadow(3px 3px 4px rgba(0,0,0,0.35))',
-            }}
-          ></div>
+            {/* PHASE ARROW IMAGES (MOBILE) */}
+            <img
+              src={phase1}
+              alt="Phase 1"
+              className="absolute z-20 object-contain"
+              style={{ 
+                right: 'calc(47% - 10px)', 
+                top: '0.5%', 
+                width: '200px'
+              }}
+            />
 
-            {/* Mobile Arrow 1 */}
-            <div className="absolute z-20" style={{ right: 'calc(55% - 10px)', top: '4%', transform: 'rotate(17deg)' }}>
-              <div style={{
-              background: 'linear-gradient(#FFFFFF, #FFFFFF, #FFFFFF)',
-              border: '2.5px solid #2a1f0a',
-              padding: '10px 18px 10px 34px',
-              fontWeight: 900,
-              fontSize: '20px',
-              letterSpacing: '0.04em',
-              color: '#1a1a1a',
-              clipPath: 'polygon(16% 0%, 100% 0%, 100% 100%, 16% 100%, 0% 50%)',
-              width: '200px',
-              textAlign: 'center',
-              fontFamily: 'serif',
-            }}>
-              ← Phase 1
-            </div>
+            <img
+              src={phase2}
+              alt="Phase 2"
+              className="absolute z-20 object-contain"
+              style={{ 
+                left: 'calc(43% - 12px)', 
+                top: '8%', 
+                width: '200px'
+              }}
+            />
+
+            <img
+              src={phase3}
+              alt="Phase 3"
+              className="absolute z-20 object-contain"
+              style={{ 
+                right: 'calc(47% - 5px)', 
+                top: '25%',
+                width: '200px'
+              }}
+            />
+
+            <img
+              src={phase4}
+              alt="Phase 4"
+              className="absolute z-20 object-contain"
+              style={{ 
+                left: 'calc(38% - 5px)', 
+                top: '32%', 
+                width: '200px'
+              }}
+            />
+
           </div>
 
-         
-
-            {/* Mobile Arrow 2 */}
-            <div className="absolute z-20" style={{ left: 'calc(48% - 12px)', top: '19%', transform: 'rotate(-10deg)' }}>
-              <div style={{
-              background: 'linear-gradient(#FFFFFF, #FFFFFF, #FFFFFF)',
-              border: '2.5px solid #2a1f0a',
-              padding: '10px 34px 10px 18px',
-              fontWeight: 900,
-              fontSize: '20px',
-              letterSpacing: '0.04em',
-              color: '#1a1a1a',
-              clipPath: 'polygon(0% 0%, 84% 0%, 100% 50%, 84% 100%, 0% 100%)',
-              width: '200px',
-              textAlign: 'center',
-              fontFamily: 'serif',
-            }}>
-              Phase 2 →
-            </div>
-          </div>
-
-         
-
-            {/* Mobile Arrow 3 */}
-            <div className="absolute z-20" style={{ right: 'calc(55% - 5px)', top: '38%' }}>
-              <div style={{
-              background: 'linear-gradient(#FFFFFF, #FFFFFF, #FFFFFF)',
-              border: '2.5px solid #2a1f0a',
-              padding: '10px 18px 10px 34px',
-              fontWeight: 900,
-              fontSize: '20px',
-              letterSpacing: '0.04em',
-              color: '#1a1a1a',
-              clipPath: 'polygon(16% 0%, 100% 0%, 100% 100%, 16% 100%, 0% 50%)',
-              width: '200px',
-              textAlign: 'center',
-              fontFamily: 'serif',
-            }}>
-              ← Phase 3
-            </div>
-          </div>
-
-         
-
-            {/* Mobile Arrow 4 */}
-            <div className="absolute z-20" style={{ left: 'calc(47% - 5px)', top: '50%', transform: 'rotate(2deg)' }}>
-              <div style={{
-              background: 'linear-gradient(to right, #FFFFFF, #FFFFFF, #FFFFFF)',
-              border: '2.5px solid #2a1f0a',
-              padding: '10px 34px 10px 18px',
-              fontWeight: 900,
-              fontSize: '20px',
-              letterSpacing: '0.04em',
-              color: '#1a1a1a',
-              clipPath: 'polygon(0% 0%, 84% 0%, 100% 50%, 84% 100%, 0% 100%)',
-              width: '200px',
-              textAlign: 'center',
-              fontFamily: 'serif',
-            }}>
-              Phase 4 →
-            </div>
-         
-            </div>
-          </div>
-
-          {/*  LOWER STAGE VECTOR SETUP LAYOUT (MATCHES WATERMARKED_IMG_2803785824709020721.PNG)*/}
+          {/* LOWER STAGE VECTOR SETUP LAYOUT */}
           <div className="relative w-full h-[180px] mt-auto">
             
             {/* Elon illustration repositioned perfectly to the left ground space */}
             <div 
               className="absolute z-10 pointer-events-none" 
-              style={{ width: '470px', height: '270px', bottom: '-50px', left: '45%' }}
+              style={{ width: '450px', height: '200px', bottom: '-50px', left: '33%' }}
             >
               <img src={elon} alt="Elon" className="w-full h-full object-contain object-bottom" />
             </div>
 
             {/* Floating comic style dialogue box container */}
-            <div className="absolute bottom-[140px] right-[50px] z-20 flex flex-col items-center">
+            <div className="absolute bottom-[130px] right-[50px] z-20 flex flex-col items-center">
               <div className="bg-white border-2 border-black rounded-full px-3 py-1.5 text-[10px] font-black text-black flex items-center gap-1 shadow-[2px_2px_0px_0px_#000]">
                 <span className="text-xs font-black">↖</span>
                 <span className="tracking-tight whitespace-nowrap">Click here</span>

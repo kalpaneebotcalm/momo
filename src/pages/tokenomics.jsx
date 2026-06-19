@@ -215,7 +215,7 @@ export default function Tokenomics() {
 
       {/* Footer Branding anchor tag */}
       <div className="w-full text-center text-[10px] text-white/40 font-medium z-30 mt-auto">
-        @copyright 2026 all right reserved by Memo
+        @copyright 2026 all right reserved by Memo 
       </div>
     </section>
   );
